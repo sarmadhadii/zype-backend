@@ -62,5 +62,11 @@ export class DataController {
             return undefined;
         }
     }
+
+    //test route
+    @Get('test')
+    async test(): Promise<string> {
+        return 'success';
+    }
     
 }

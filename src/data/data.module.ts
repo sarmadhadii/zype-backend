@@ -6,7 +6,8 @@ import { UserService } from 'src/services/user.service';
 
 @Module({
     imports: [
-        MongooseModule.forRoot('mongodb://127.0.0.1:27017/zype'),
+        // MongooseModule.forRoot('mongodb://127.0.0.1:27017/zype'),
+        MongooseModule.forRoot('mongodb+srv://zype:mechanicalkeyboard64@zype.fymwzpu.mongodb.net/?retryWrites=true&w=majority', { dbName: 'zype' }),
         MongooseModule.forFeature([
             { name: 'User', schema: UserSchema }
         ])
